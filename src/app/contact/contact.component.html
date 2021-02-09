@@ -1,0 +1,109 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6 p-5">
+      <div fxLayout="row" fxLayoutAlign="space-between">
+        <mat-form-field
+          appearance="fill"
+          fxFlex="45">
+
+          <mat-label>Enter your first name</mat-label>
+
+          <input matInput
+            placeholder="Legend"
+            required>
+
+          <mat-icon matSuffix
+            color="accent">badge</mat-icon>
+
+        </mat-form-field>
+
+        <mat-form-field
+          appearance="fill"
+          fxFlex="45">
+
+          <mat-label>Enter your last name</mat-label>
+
+          <input matInput
+            placeholder="Legendsson"
+            required>
+
+          <mat-icon matSuffix
+            color="accent">badge</mat-icon>
+
+
+
+        </mat-form-field>
+      </div>
+
+      <div fxLayout="row">
+        <mat-form-field
+          appearance="fill"
+          fxFlex="100">
+
+          <mat-label>Enter your email</mat-label>
+
+          <input
+            matInput
+            placeholder="legend@legendsson.se"
+            [formControl]="email"
+            required>
+
+          <mat-error
+            *ngIf="email.invalid">
+            {{getErrorMessageEmail()}}
+          </mat-error>
+
+          <mat-icon matSuffix
+            color="accent">email</mat-icon>
+
+        </mat-form-field>
+      </div>
+
+      <div fxLayout="row">
+        <mat-form-field
+          appearance="fill"
+          fxFlex="100">
+
+          <mat-label>Message</mat-label>
+
+          <input matInput
+            placeholder="Your message"
+            required>
+
+          <mat-icon matSuffix
+            color="accent">chat</mat-icon>
+
+
+        </mat-form-field>
+      </div>
+
+      <div fxLayout="row">
+        <mat-form-field
+          appearance="fill"
+          fxFlex="100">
+
+          <mat-label>Additional details...</mat-label>
+
+          <textarea matInput
+            style="height:100px;"></textarea>
+
+
+
+        </mat-form-field>
+
+
+
+      </div>
+      <div fxLayout="row">
+
+        <button mat-flat-button color="accent" fxFlex="100" type="submit">Submit</button>
+      </div>
+
+    </div>
+
+
+    <div class=" col-md-6 p-5">
+      sup
+    </div>
+  </div>
+</div>

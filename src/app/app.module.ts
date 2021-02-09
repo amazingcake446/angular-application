@@ -50,11 +50,19 @@ import { OverlayModule } from '@angular/cdk/overlay';
 // For MDB Angular Free
 import { NavbarModule, WavesModule, ButtonsModule } from 'angular-bootstrap-md';
 import { NavigationComponent } from './navigation/navigation.component';
+import { ContactComponent } from './contact/contact.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
+import { FlexLayoutModule } from '@angular/flex-layout';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
+    ContactComponent,
 
   ],
   imports: [
@@ -108,10 +116,18 @@ import { NavigationComponent } from './navigation/navigation.component';
     ScrollingModule,
     NavbarModule,
     WavesModule,
-    ButtonsModule
+    ButtonsModule,
+    FormsModule,
+    HttpClientModule,
+    MatNativeDateModule,
+    ReactiveFormsModule,
+    FlexLayoutModule,
 
   ],
-  providers: [],
+  providers: [ { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' } }, ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
+
+platformBrowserDynamic().bootstrapModule(AppModule)
+  .catch(err => console.error(err));
