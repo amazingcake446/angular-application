@@ -49,11 +49,13 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTreeModule} from '@angular/material/tree';
 import {OverlayModule} from '@angular/cdk/overlay';
 // For MDB Angular Free
-import { NavbarModule, WavesModule, ButtonsModule } from 'angular-bootstrap-md'; 
+import { NavbarModule, WavesModule, ButtonsModule } from 'angular-bootstrap-md';
+import { ContactComponent } from './contact/contact.component'; 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
