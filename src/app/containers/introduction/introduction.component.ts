@@ -1,15 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-introduction',
+  selector: 'codelab-quiz-intro',
   templateUrl: './introduction.component.html',
-  styleUrls: ['./introduction.component.css']
+  styleUrls: ['./introduction.component.scss']
 })
-export class IntroductionComponent implements OnInit {
+export class IntroductionComponent {
 
-  constructor() { }
+  constructor(private router: Router) {}
 
-  ngOnInit(): void {
+  startQuiz() {
+    this.router.navigateByUrl('/question/1');
   }
-
 }
