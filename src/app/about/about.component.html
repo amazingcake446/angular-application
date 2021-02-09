@@ -1,0 +1,18 @@
+
+<div class="container"
+fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="2%" >
+
+    <mat-card class="example-card" *ngFor="let member of members" fxFlex="20%">
+        <mat-card-header>
+          <mat-card-title> {{member.name | uppercase}} </mat-card-title>
+          <mat-card-subtitle> {{member.created}} </mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt=" {{member.name}} ">
+        <mat-card-content>
+            <h4> {{member.age}} </h4>
+          <p>
+            {{member.description}}
+          </p>
+        </mat-card-content>
+      </mat-card>
+</div>
