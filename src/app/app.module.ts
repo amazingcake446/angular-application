@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NO_ERRORS_SCHEMA, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -50,11 +53,17 @@ import { OverlayModule } from '@angular/cdk/overlay';
 // For MDB Angular Free
 import { NavbarModule, WavesModule, ButtonsModule } from 'angular-bootstrap-md';
 import { NavigationComponent } from './navigation/navigation.component';
+import { QuestionComponent } from './components/question/question.component';
+import { IntroductionComponent } from './containers/introduction/introduction.component';
+import { ResultsComponent } from './containers/results/results.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
+    QuestionComponent,
+    IntroductionComponent,
+    ResultsComponent,
 
   ],
   imports: [
