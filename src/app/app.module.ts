@@ -56,6 +56,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { FormCreateComponent } from './form/form-create/form-create.component';
 
 
 @NgModule({
@@ -63,6 +64,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     AppComponent,
     NavigationComponent,
     ContactComponent,
+    FormCreateComponent,
 
   ],
   imports: [
@@ -124,7 +126,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     FlexLayoutModule,
 
   ],
-  providers: [ { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' } }, ],
+  providers: [],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
