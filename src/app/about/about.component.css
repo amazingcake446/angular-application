@@ -16,15 +16,16 @@
   
 .image{
   max-width: 300px;
-  max-height: 250px;
+  height: 200px;
  
 }
 
 .title{
   font-size: .7rem;
-  font-weight: 300;
+  font-weight: 600;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #333;
+  
 }
 .subtitle{
   text-align: center;
@@ -35,3 +36,4 @@
 .age{
   text-align: center;
 }
+
