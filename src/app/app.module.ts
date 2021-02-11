@@ -54,9 +54,9 @@ import { ContactComponent } from './contact/contact.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { FormCreateComponent } from './form/form-create/form-create.component';
+import { DialogContent, FormCreateComponent } from './form/form-create/form-create.component';
+
 
 
 @NgModule({
@@ -65,6 +65,8 @@ import { FormCreateComponent } from './form/form-create/form-create.component';
     NavigationComponent,
     ContactComponent,
     FormCreateComponent,
+    DialogContent
+
 
   ],
   imports: [
@@ -124,6 +126,7 @@ import { FormCreateComponent } from './form/form-create/form-create.component';
     MatNativeDateModule,
     ReactiveFormsModule,
     FlexLayoutModule,
+    MatDialogModule,
 
   ],
   providers: [],

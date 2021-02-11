@@ -1,132 +1,173 @@
-<div class="container">
-
-  <h3>Contact</h3>
-  <form
-    #f="ngForm"
-    id="myForm"
+<div class="container content">
+  <div
+    fxLayout="row"
+    fxLayoutAlign="center stretch"
   >
-    <div
-      class="form-group"
-      fxLayoutAlign="space-between"
+
+
+
+    <mat-card
+      class="d-flex align-items-center content-shadow"
+      style="background-color: #495C6A; height: 519.5px; width: 25%;"
     >
-      <mat-form-field
-        fxFlex="45"
-        appearance="fill"
-      >
-        <mat-label>Enter your first name</mat-label>
-        <input
-          matInput
-          placeholder="Legend"
-          type="text"
-          name="firstname"
-          [(ngModel)]="data.firstname"
-          required
+      <div>
+        <img
+          mat-card-image
+          src="../../../assets/img/contact-us.png"
+          style="width: 100px;"
+          class="m-auto d-block"
         >
+        <mat-card-content>
+          <p class="text-white contact-text">
+            If you have questions or just want to get in touch, send us an email. We look forward to
+            hearing from you!
+          </p>
+        </mat-card-content>
+      </div>
+    </mat-card>
 
 
-        <mat-icon
-          matSuffix
-          color="accent"
-        >badge</mat-icon>
-      </mat-form-field>
+    <div
+      style="height: 100%; width: 50%;"
+      class="p-5 form-bg content-shadow"
+    >
 
-      <mat-form-field
-        fxFlex="45"
-        appearance="fill"
+      <h1 class="text-center pb-4">Contact Us</h1>
+      <form
+        #f="ngForm"
+        id="myForm"
       >
-
-        <mat-label>Enter your last name</mat-label>
-        <input
-          matInput
-          placeholder="Legend"
-          name="lastname"
-          [(ngModel)]="data.lastname"
-          required
+        <div
+          class="form-group m-0"
+          fxLayoutAlign="space-between"
         >
+          <mat-form-field
+            fxFlex="45"
+            appearance="fill"
+          >
+            <mat-label>Enter your first name</mat-label>
+            <input
+              matInput
+              placeholder="Legend"
+              type="text"
+              name="firstname"
+              [(ngModel)]="data.firstname"
+              required
+            >
 
 
-        <mat-icon
-          matSuffix
-          color="accent"
-        >badge</mat-icon>
-      </mat-form-field>
+            <mat-icon
+              matSuffix
+              color="accent"
+            >badge</mat-icon>
+          </mat-form-field>
+
+          <mat-form-field
+            fxFlex="45"
+            appearance="fill"
+          >
+
+            <mat-label>Enter your last name</mat-label>
+            <input
+              matInput
+              placeholder="Legend"
+              name="lastname"
+              [(ngModel)]="data.lastname"
+              required
+            >
+
+
+            <mat-icon
+              matSuffix
+              color="accent"
+            >badge</mat-icon>
+          </mat-form-field>
+        </div>
+
+        <div class="form-group m-0">
+          <mat-form-field
+            fxFlex="100"
+            appearance="fill"
+          >
+            <mat-label>Email</mat-label>
+            <input
+              matInput
+              type="email"
+              name="email"
+              [(ngModel)]="data.email"
+              placeholder="Enter your email adress here"
+              ngModel
+              email
+              required
+            >
+            <mat-icon
+              matSuffix
+              color="accent"
+            >email</mat-icon>
+          </mat-form-field>
+
+        </div>
+
+
+        <div class="form-group m-0">
+          <mat-form-field
+            fxFlex="100"
+            appearance="fill"
+          >
+            <mat-label>Message</mat-label>
+            <input
+              matInput
+              type="text"
+              name="message"
+              [(ngModel)]="data.message"
+              placeholder="Enter your message here"
+              required
+            >
+            <mat-icon
+              matSuffix
+              color="accent"
+            >chat</mat-icon>
+          </mat-form-field>
+
+        </div>
+
+        <div class="form-group m-0">
+          <mat-form-field
+            fxFlex="100"
+            appearance="fill"
+          >
+            <mat-label>Additional details...</mat-label>
+
+            <textarea
+              matInput
+              type="text"
+              name="email"
+              [(ngModel)]="data.moredetails"
+              style="height:50px;"
+            ></textarea>
+
+          </mat-form-field>
+
+        </div>
+
+
+        <div>
+          <button
+            style="height: 40px;"
+            mat-flat-button
+            color="accent"
+            fxFlex="100"
+            type="submit"
+            class="btn btn-primary"
+            [disabled]="!f.valid"
+            (click)="submitForm(); f.resetForm(); openSnackBar()"
+          >Send</button>
+        </div>
+
+
+      </form>
     </div>
 
-    <div class="form-group">
-      <mat-form-field
-        fxFlex="100"
-        appearance="fill"
-      >
-        <mat-label>Email</mat-label>
-        <input
-          matInput
-          type="text"
-          name="email"
-          [(ngModel)]="data.email"
-          placeholder="Enter your email adress here"
-        >
-        <mat-icon
-          matSuffix
-          color="accent"
-        >email</mat-icon>
-      </mat-form-field>
+  </div>
 
-    </div>
-
-
-    <div class="form-group">
-      <mat-form-field
-        fxFlex="100"
-        appearance="fill"
-      >
-        <mat-label>Message</mat-label>
-        <input
-          matInput
-          type="text"
-          name="message"
-          [(ngModel)]="data.message"
-          placeholder="Enter your message here"
-        >
-        <mat-icon
-          matSuffix
-          color="accent"
-        >chat</mat-icon>
-      </mat-form-field>
-
-    </div>
-
-    <div class="form-group">
-      <mat-form-field
-        fxFlex="100"
-        appearance="fill"
-      >
-        <mat-label>Additional details...</mat-label>
-
-        <textarea
-          matInput
-          type="text"
-          name="email"
-          [(ngModel)]="data.moredetails"
-          style="height:100px;"
-        ></textarea>
-
-      </mat-form-field>
-
-    </div>
-
-
-    <div>
-      <button
-        style="height: 40px;"
-        mat-flat-button
-        color="accent"
-        fxFlex="100"
-        type="submit"
-        class="btn btn-primary"
-        (click)="submitForm(); f.resetForm() "
-      >Submit</button>
-    </div>
-
-
-  </form>
 </div>
