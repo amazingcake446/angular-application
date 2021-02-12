@@ -1,0 +1,48 @@
+p { 
+    font-size:1rem;
+}
+
+.home-h1 { 
+    font-size: 4rem;
+    z-index: 100;
+}
+
+.home-h2 {
+    font-size: 2rem;
+}
+
+.home-p {
+    font-size: 1.6rem;
+}
+
+.bg-header { 
+    background-color:rgb(18, 19, 18);
+    z-index: 1;
+}
+
+.product-device {
+    position: absolute;
+    right: 10%;
+    bottom: -30%;
+    width: 300px;
+    height: 540px;
+    background-color: rgb(141, 141, 141);
+    border-radius: 21px;
+    transform: rotate(30deg);
+    z-index: 0;
+}
+
+.product-device-inside {
+    position: absolute;
+    right: 10%;
+    bottom: -30%;
+    width: 250px;
+    height: 440px;
+    background-color: rgb(131, 38, 38);
+    border-radius: 21px;
+    transform: rotate(30deg);
+    z-index: 0;
+}
+
+
+

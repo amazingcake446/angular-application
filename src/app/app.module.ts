@@ -49,8 +49,6 @@ import { MatTreeModule } from '@angular/material/tree';
 import { OverlayModule } from '@angular/cdk/overlay';
 // For MDB Angular Free
 import { NavbarModule, WavesModule, ButtonsModule } from 'angular-bootstrap-md';
-import { NavigationComponent } from './navigation/navigation.component';
-import { ContactComponent } from './contact/contact.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
@@ -59,8 +57,17 @@ import { DialogContent, FormCreateComponent } from './form/form-create/form-crea
 import { FormEditComponent } from './form/form-edit/form-edit.component';
 import { FormListComponent } from './form/form-list/form-list.component';
 
+import { HomeComponent } from './home/home.component';
+import { SpaComponent } from './home/spa/spa.component';
+import { InfoComponent } from './home/info/info.component';
+import { IntroduktionComponent } from './home/introduktion/introduktion.component';
+import { CliBootComponent } from './home/cli-boot/cli-boot.component';
 
 
+import { AboutComponent } from './about/about.component';
+import { QuizComponent } from './quiz/quiz.component';
+import { ContactComponent } from './contact/contact.component';
+import { NavigationComponent } from './navigation/navigation.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -69,9 +76,17 @@ import { FormListComponent } from './form/form-list/form-list.component';
     FormCreateComponent,
     DialogContent,
     FormEditComponent,
-    FormListComponent
+    FormListComponent,
 
+    HomeComponent,
+    SpaComponent,
+    InfoComponent,
+    IntroduktionComponent,
+    CliBootComponent,
 
+    AboutComponent,
+    QuizComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
