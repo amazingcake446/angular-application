@@ -49,6 +49,14 @@ import { MatTreeModule } from '@angular/material/tree';
 import { OverlayModule } from '@angular/cdk/overlay';
 // For MDB Angular Free
 import { NavbarModule, WavesModule, ButtonsModule } from 'angular-bootstrap-md';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { DialogContent, FormCreateComponent } from './form/form-create/form-create.component';
+import { FormEditComponent } from './form/form-edit/form-edit.component';
+import { FormListComponent } from './form/form-list/form-list.component';
+
 import { HomeComponent } from './home/home.component';
 import { SpaComponent } from './home/spa/spa.component';
 import { InfoComponent } from './home/info/info.component';
@@ -64,6 +72,12 @@ import { NavigationComponent } from './navigation/navigation.component';
   declarations: [
     AppComponent,
     NavigationComponent,
+    ContactComponent,
+    FormCreateComponent,
+    DialogContent,
+    FormEditComponent,
+    FormListComponent,
+
     HomeComponent,
     SpaComponent,
     InfoComponent,
@@ -125,11 +139,19 @@ import { NavigationComponent } from './navigation/navigation.component';
     ScrollingModule,
     NavbarModule,
     WavesModule,
-    ButtonsModule
+    ButtonsModule,
+    FormsModule,
+    HttpClientModule,
+    MatNativeDateModule,
+    ReactiveFormsModule,
+    FlexLayoutModule,
+    MatDialogModule,
 
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [ AppComponent ]
 })
 export class AppModule { }
 
+platformBrowserDynamic().bootstrapModule(AppModule)
+  .catch(err => console.error(err));
