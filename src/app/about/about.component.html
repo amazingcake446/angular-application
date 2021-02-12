@@ -1,22 +1,37 @@
+<app-navigation></app-navigation>
 
 
 
-<div class="container"
-fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="4%" fxLayoutAlign="center" >
-  
-    <mat-card class="example-card" *ngFor="let member of members" fxFlex="20%">
-        <mat-card-header>
-          <mat-card-title class="title"> {{member.name | uppercase}} </mat-card-title>
-          <mat-card-subtitle class="subtitle"> {{member.created}} </mat-card-subtitle>
-        </mat-card-header>
-        <img class="image" mat-card-image src="{{member.image}}" alt=" {{member.name}}">
-        <mat-card-content>
-            <h5 class="age">Age: {{member.age}} </h5>
-          <p class="desc">
-            {{member.description}}
-          </p>
-        
-        </mat-card-content>
-      </mat-card>
+<div
+  class="container about-cards"
+  fxLayout="row"
+  fxLayout.xs="column"
+  fxLayoutWrap
+  fxLayoutGap="4%"
+  fxLayoutAlign="center"
+>
+
+  <mat-card
+    class="example-card"
+    *ngFor="let member of members"
+    fxFlex="20%"
+  >
+    <mat-card-header>
+      <mat-card-title class="title"> {{member.name | uppercase}} </mat-card-title>
+      <mat-card-subtitle class="subtitle"> {{member.created}} </mat-card-subtitle>
+    </mat-card-header>
+    <img
+      class="image"
+      mat-card-image
+      src="{{member.image}}"
+      alt=" {{member.name}}"
+    >
+    <mat-card-content>
+      <h5 class="age">Age: {{member.age}} </h5>
+      <p class="desc">
+        {{member.description}}
+      </p>
+
+    </mat-card-content>
+  </mat-card>
 </div>
-
