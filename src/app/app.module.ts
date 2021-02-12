@@ -1,7 +1,7 @@
 import { NgModule, NO_ERRORS_SCHEMA, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 // import { CommonModule } from "@angular/common";
-import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
-import {BrowserModule} from "@angular/platform-browser";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { BrowserModule } from "@angular/platform-browser";
 
 import { MAT_RADIO_DEFAULT_OPTIONS } from '@angular/material/radio';
 
@@ -17,8 +17,8 @@ import { ResultsComponent } from './containers/results/results.component';
 import { NavigationComponent } from './navigation/navigation.component';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
-
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { A11yModule } from '@angular/cdk/a11y';
@@ -44,7 +44,6 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatIconModule } from '@angular/material/icon';
-import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatNativeDateModule, MatRippleModule } from '@angular/material/core';
@@ -85,59 +84,61 @@ import { QuizComponent } from './quiz/quiz.component';
 import { ContactComponent } from './contact/contact.component';
 
 
-    
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AboutComponent,
     AboutComponent,
     AppComponent,
-    IntroductionComponent,
-    QuestionComponent,
-    NavigationComponent,
-    QuestionComponent2.QuestionComponent,
-    ResultsComponent,
-    NavigationComponent,
+    AppComponent,
+    CliBootComponent,
     ContactComponent,
-    FormCreateComponent,
+    ContactComponent,
     DialogContent,
+    FormCreateComponent,
     FormEditComponent,
     FormListComponent,
     HomeComponent,
-    SpaComponent,
     InfoComponent,
+    IntroductionComponent,
     IntroduktionComponent,
-    CliBootComponent,
-    AboutComponent,
+    NavigationComponent,
+    QuestionComponent,
+    QuestionComponent2.QuestionComponent,
     QuizComponent,
-    ContactComponent
+    ResultsComponent,
+    SpaComponent,
   ],
   imports: [
     // CommonModule,
-    BrowserModule,
-    BrowserAnimationsModule,
-    AppRoutingModule,
-    ReactiveFormsModule,
-    NgbModule,
-    MatCardModule,
-    FormsModule,
-    FlexLayoutModule,
-    MatToolbarModule,
     A11yModule,
-    ClipboardModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    BrowserModule,
     CdkStepperModule,
     CdkTableModule,
     CdkTreeModule,
+    ClipboardModule,
     DragDropModule,
+    FlexLayoutModule,
+    FlexLayoutModule,
+    FormsModule,
+    FormsModule,
+    HttpClientModule,
     MatAutocompleteModule,
     MatBadgeModule,
     MatBottomSheetModule,
     MatButtonModule,
+    MatButtonModule,
     MatButtonToggleModule,
     MatCardModule,
-    MatRadioModule,
+    MatCardModule,
+    MatDialogModule,
+    MatFormFieldModule,
     MatIconModule,
-    MatButtonModule,
+    MatInputModule,
+    MatNativeDateModule,
+    MatRadioModule,
     MatRippleModule,
     MatSelectModule,
     MatSidenavModule,
@@ -148,24 +149,22 @@ import { ContactComponent } from './contact/contact.component';
     MatTableModule,
     MatTabsModule,
     MatToolbarModule,
+    MatToolbarModule,
     MatTooltipModule,
     MatTreeModule,
+    NgbModule,
     OverlayModule,
     PortalModule,
-    ScrollingModule,
-    FormsModule,
-    HttpClientModule,
-    MatNativeDateModule,
     ReactiveFormsModule,
-    FlexLayoutModule,
-    MatDialogModule,
+    ReactiveFormsModule,
+    ScrollingModule,
 
     AccordionModule.forRoot()
   ],
-  providers: [{
+  providers: [ {
     provide: MAT_RADIO_DEFAULT_OPTIONS,
     useValue: { color: 'accent' },
-  }],
+  } ],
   bootstrap: [ AppComponent ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,
