@@ -1,11 +1,13 @@
 * {
-  font-size: .7rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+  
   text-align: center;
 }
 
 .example-card {
   max-width: 300px;
+  font-size: .7rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .head-img {
