@@ -17,7 +17,7 @@ const routes: Routes = [
 
   { path: 'home', component: HomeComponent },
   { path: 'about', component: AboutComponent },
-  { path: 'quiz', component: QuizComponent },
+ /*  { path: 'quiz', component: QuizComponent }, */
   { path: 'contact', component: FormCreateComponent },
   { path: 'edit/:id', component: FormEditComponent },
   { path: 'list', component: FormListComponent },
