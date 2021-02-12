@@ -21,10 +21,10 @@ const routes: Routes = [
   { path: 'contact', component: FormCreateComponent },
   { path: 'edit/:id', component: FormEditComponent },
   { path: 'list', component: FormListComponent },
-  { path: 'intro', component: IntroductionComponent, pathMatch: 'full' },
-  { path: 'question', component: QuestionComponent, pathMatch: 'full' },
-  { path: 'question/:questionId', component: QuestionComponent, pathMatch: 'full' },
-  { path: 'results', component: ResultsComponent, pathMatch: 'full' },
+  { path: 'intro', component: IntroductionComponent },
+  { path: 'question', component: QuestionComponent },
+  { path: 'question/:questionId', component: QuestionComponent },
+  { path: 'results', component: ResultsComponent },
   /* { path: '', redirectTo: 'intro', pathMatch: 'full' } */
 
 ];

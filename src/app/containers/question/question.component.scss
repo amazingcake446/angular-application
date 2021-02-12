@@ -156,7 +156,8 @@ mat-card:hover {
 }
 
 mat-card-title {
-  margin: -50px 90px 10px 10px;
+ margin-left: 3rem; 
+ margin-top: 2rem; 
   font-family: "Monospace", monospace;
   font-size: 30px !important;
   font-weight: 900 !important;
@@ -164,8 +165,9 @@ mat-card-title {
   display: block; 
 }
 mat-card-subtitle {
+  margin-left: 3rem; 
   text-align: center;
-  margin-right: 80px; 
+
   font-family: "Space Mono", monospace;
   font-style: italic;
   font-size: 17.5px !important;

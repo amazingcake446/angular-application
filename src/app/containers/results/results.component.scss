@@ -3,11 +3,7 @@ $font-weight-max: 900;
 
 mat-card-header {
   display: block;
-  mat-card-title {
-    text-align: center;
-    margin-left: 2.2rem; 
-    margin-top: .5rem; 
-  }
+  
   .header-image {
     margin-left: 10px;
   }
@@ -264,7 +260,7 @@ mat-card:hover {
 }
 
 mat-card-title {
-  margin: -50px 90px 10px 10px;
+  margin-left: 2rem; 
   font-family: "Monospace", monospace;
   font-size: 30px !important;
   font-weight: 900 !important;
@@ -273,7 +269,7 @@ mat-card-title {
 }
 mat-card-subtitle {
   text-align: center;
-  margin-right: 80px; 
+  margin-left: 1.4rem; 
   font-family: "Space Mono", monospace;
   font-style: italic;
   font-size: 17.5px !important;
