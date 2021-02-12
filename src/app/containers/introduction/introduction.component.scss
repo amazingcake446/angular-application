@@ -1,0 +1,85 @@
+mat-card-header {
+    display: block;
+  
+    .header-image {
+      margin-left: 15px;
+    }
+  
+    .mat-card-container {
+      float: right;
+      margin-top: -85px;
+      margin-right: 40px;
+  
+      .subtitle2 {
+        display: block;
+      }
+    }
+  
+    .quiz-topic-img {
+      display: flex;
+      justify-content: center;
+      /* background: url('../../../assets/images/DIDiagram.png') no-repeat center center; */
+      background-size: 100% !important;
+      margin: 90px -10px 0 5px;
+      height: 300px !important;
+      width: 100% !important;
+    }
+  }
+  
+  mat-card-content p {
+    text-align: justify;
+    margin-top: -25px;
+  }
+  
+  mat-card-actions {
+    text-align: center;
+  
+    button {
+      margin-bottom: 10px !important;
+    }
+    button:hover {
+      border: 1px solid #007aff;
+    }
+  }
+  
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+mat-card {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 10%;
+  margin-left: 30%; 
+  width: 43rem;
+  height: inherit;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+mat-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+mat-card-title {
+  margin: -50px 90px 10px 10px;
+  font-family: "Monospace", monospace;
+  font-size: 30px !important;
+  font-weight: 900 !important;
+  color: #007aff;
+  display: block; 
+}
+mat-card-subtitle {
+  text-align: center;
+  margin-right: 80px; 
+  font-family: "Space Mono", monospace;
+  font-style: italic;
+  font-size: 17.5px !important;
+  font-weight: 900 !important;
+  color: #808080;
+}
