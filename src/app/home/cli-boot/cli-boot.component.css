@@ -1,0 +1,35 @@
+p { 
+    font-size:1rem;
+}
+
+.home-h1 { 
+    font-size: 4rem;
+    z-index: 100;
+}
+
+.home-h2 {
+    font-size: 2rem;
+}
+
+.home-p {
+    font-size: 1.6rem;
+}
+
+.bg-header { 
+    background-color:rgb(18, 19, 18);
+    z-index: 1;
+}
+
+.bg-customblue {
+    background-color:rgba(2, 48, 53, 0.787);
+}
+
+.bg-customCol {
+    background-color:rgba(0, 180, 111, 0.787);
+}
+
+.bg-customlight {
+    background-color:rgba(36, 52, 63, 0.178);
+}
+
+
