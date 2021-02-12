@@ -49,7 +49,6 @@ import { MatTreeModule } from '@angular/material/tree';
 import { OverlayModule } from '@angular/cdk/overlay';
 // For MDB Angular Free
 import { NavbarModule, WavesModule, ButtonsModule } from 'angular-bootstrap-md';
-import { NavigationComponent } from './navigation/navigation.component';
 import { HomeComponent } from './home/home.component';
 import { SpaComponent } from './home/spa/spa.component';
 import { InfoComponent } from './home/info/info.component';
@@ -57,6 +56,10 @@ import { IntroduktionComponent } from './home/introduktion/introduktion.componen
 import { CliBootComponent } from './home/cli-boot/cli-boot.component';
 
 
+import { AboutComponent } from './about/about.component';
+import { QuizComponent } from './quiz/quiz.component';
+import { ContactComponent } from './contact/contact.component';
+import { NavigationComponent } from './navigation/navigation.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -66,7 +69,10 @@ import { CliBootComponent } from './home/cli-boot/cli-boot.component';
     InfoComponent,
     IntroduktionComponent,
     CliBootComponent,
-    
+
+    AboutComponent,
+    QuizComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -123,7 +129,7 @@ import { CliBootComponent } from './home/cli-boot/cli-boot.component';
 
   ],
   providers: [],
-  bootstrap: [ AppComponent ]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
 
