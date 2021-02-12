@@ -1,0 +1,35 @@
+.content {
+    margin-top: 4rem;
+}
+
+.content-shadow {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.form-bg {
+    background-color: #EEF3FA;
+}
+
+::ng-deep.mat-form-field-appearance-fill .mat-form-field-flex {
+    background-color: rgb(254, 254, 254);
+}
+
+::ng-deep.mat-card {
+    border-radius: 0 !important;
+}
+
+.contact-text {
+    font-size: 1rem;
+    padding-top: 1rem;
+    line-height: 1.5rem;
+    font-weight: 100;
+    text-align: center;
+}
+
+.bg-custom {
+    background-color: #495C6A;
+}
+
+a {
+    color: #fff;
+}

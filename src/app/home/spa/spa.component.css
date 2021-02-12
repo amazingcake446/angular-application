@@ -1,0 +1,35 @@
+.client{
+    font-size:3rem;
+    margin-top:80px;
+    
+}
+
+span { 
+    color:yellow;
+}
+
+
+.spanBlack { 
+    color:black;
+}
+
+.arrowbig{
+    font-size:3rem;
+}
+
+p { 
+    font-size:1rem;
+}
+
+.home-h1 { 
+    font-size: 4rem;
+    z-index: 100;
+}
+
+.home-h2 {
+    font-size: 2rem;
+}
+
+.home-p {
+    font-size: 1.6rem;
+}

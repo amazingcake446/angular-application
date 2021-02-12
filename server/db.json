@@ -1,0 +1,43 @@
+{
+  "messages": [
+    {
+      "firstname": "Legend",
+      "lastname": "Legendsson",
+      "email": "legend@legendsson.com",
+      "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at lacus vitae nisl bibendum faucibus vel sit amet diam. Aenean congue posuere turpis, in pretium diam mattis cursus. Nunc vulputate, ipsum at elementum consectetur, neque justo auctor lacus, a feugiat massa turpis vitae ligula. Aliquam pellentesque vulputate ipsum in consequat. Vestibulum pellentesque eu erat ac aliquet. Aliquam sodales odio at justo finibus condimentum. Cras eu maximus libero. Curabitur feugiat placerat neque, non dignissim nibh. Nulla mattis semper ipsum.",
+      "moredetails": "GME to the MOONNNNN",
+      "id": 1
+    },
+    {
+      "firstname": "dainja",
+      "lastname": "dainja",
+      "email": "dainja@protonmail.com",
+      "message": "dainja",
+      "moredetails": "dainja",
+      "id": 2
+    },
+    {
+      "firstname": "dainja",
+      "lastname": "dainja",
+      "email": "dainja@protonmail.com",
+      "message": "dainjadainjadainja",
+      "moredetails": "dainjadainjadainja",
+      "id": 3
+    },
+    {
+      "firstname": "dainja",
+      "lastname": "dainja",
+      "email": "dainja@protonmail.com",
+      "message": "dainjadainjadainja",
+      "moredetails": "dainjadainjadainja",
+      "id": 4
+    },
+    {
+      "firstname": "dainja",
+      "lastname": "dainja",
+      "email": "dainja@protonmail.com",
+      "message": "dainja",
+      "id": 5
+    }
+  ]
+}
