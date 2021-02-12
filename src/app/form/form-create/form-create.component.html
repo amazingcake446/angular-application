@@ -1,3 +1,41 @@
+<main>
+  <header
+    class="d-flex flex-column justify-content-between flex-md-row align-items-center p-3 px-md-4 mb-3 border-bottom bg-custom"
+  >
+    <p class="h5 my-0 me-md-auto fw-normal text-white">
+      <a
+        routerLink="/home"
+        class="navi active"
+      >Legendz</a>
+    </p>
+    <nav class="my-2 my-md-0 me-md-3">
+      <a
+        routerLink="/about"
+        routerLinkActive="active"
+        class="p-2 text-white"
+      >About</a>
+      <a
+        routerLink="/quiz"
+        routerLinkActive="active"
+        class="p-2 text-white"
+      >Quiz</a>
+      <a
+        routerLink="/contact"
+        routerLinkActive="active"
+        class="p-2 text-white"
+        href="#"
+      >Contact</a>
+      <a
+        routerLink="/pricing"
+        routerLinkActive="active"
+        class="p-2 text-white"
+      >Pricing</a>
+    </nav>
+  </header>
+</main>
+
+
+
 <div class="container content">
   <div
     fxLayout="row"
@@ -45,7 +83,7 @@
             fxFlex="45"
             appearance="fill"
           >
-            <mat-label>Enter your first name</mat-label>
+            <mat-label>First name</mat-label>
             <input
               matInput
               placeholder="Legend"
@@ -67,7 +105,7 @@
             appearance="fill"
           >
 
-            <mat-label>Enter your last name</mat-label>
+            <mat-label>Last name</mat-label>
             <input
               matInput
               placeholder="Legend"

@@ -61,7 +61,7 @@ export class FormCreateComponent implements OnInit {
 
   // SnackBar
   horizontalPosition: MatSnackBarHorizontalPosition = 'center';
-  verticalPosition: MatSnackBarVerticalPosition = 'top';
+  verticalPosition: MatSnackBarVerticalPosition = 'bottom';
 
   openSnackBar() {
     this.snackBar.open('Your message has been sent', 'Close', {

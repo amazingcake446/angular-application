@@ -25,3 +25,11 @@
     font-weight: 100;
     text-align: center;
 }
+
+.bg-custom {
+    background-color: #495C6A;
+}
+
+a {
+    color: #fff;
+}
