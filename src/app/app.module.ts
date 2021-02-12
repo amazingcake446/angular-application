@@ -82,6 +82,12 @@ import { CliBootComponent } from './home/cli-boot/cli-boot.component';
 import { AboutComponent } from './about/about.component';
 import { QuizComponent } from './quiz/quiz.component';
 import { ContactComponent } from './contact/contact.component';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from "@angular/fire/firestore";
+import { AngularFireDatabaseModule } from "@angular/fire/database";
+import { environment } from 'src/environments/environment';
+
+
 
 
 
@@ -159,6 +165,11 @@ import { ContactComponent } from './contact/contact.component';
     ReactiveFormsModule,
     ScrollingModule,
 
+
+
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule,
+    AngularFireDatabaseModule,
     AccordionModule.forRoot()
   ],
   providers: [ {

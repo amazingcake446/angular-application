@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "angular-lgndz": {
+      "hosting": {
+        "angular-application": [
+          "angular-lgndz"
+        ]
+      }
+    }
+  }
+}
