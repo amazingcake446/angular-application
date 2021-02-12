@@ -1,12 +1,12 @@
 {
-  "user": [
+  "messages": [
     {
-      "id": 1,
       "firstname": "Legend",
       "lastname": "Legendsson",
       "email": "legend@legendsson.com",
-      "message": "lorem",
-      "moredetails": "more lorem"
+      "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at lacus vitae nisl bibendum faucibus vel sit amet diam. Aenean congue posuere turpis, in pretium diam mattis cursus. Nunc vulputate, ipsum at elementum consectetur, neque justo auctor lacus, a feugiat massa turpis vitae ligula. Aliquam pellentesque vulputate ipsum in consequat. Vestibulum pellentesque eu erat ac aliquet. Aliquam sodales odio at justo finibus condimentum. Cras eu maximus libero. Curabitur feugiat placerat neque, non dignissim nibh. Nulla mattis semper ipsum.",
+      "moredetails": "GME to the MOON",
+      "id": 1
     }
   ]
 }

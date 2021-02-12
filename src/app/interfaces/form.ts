@@ -1,4 +1,4 @@
-export class FormField {
+export class Form {
     id: number;
     firstname: string;
     lastname: string;

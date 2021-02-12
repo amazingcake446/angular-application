@@ -56,6 +56,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { DialogContent, FormCreateComponent } from './form/form-create/form-create.component';
+import { FormEditComponent } from './form/form-edit/form-edit.component';
+import { FormListComponent } from './form/form-list/form-list.component';
 
 
 
@@ -65,7 +67,9 @@ import { DialogContent, FormCreateComponent } from './form/form-create/form-crea
     NavigationComponent,
     ContactComponent,
     FormCreateComponent,
-    DialogContent
+    DialogContent,
+    FormEditComponent,
+    FormListComponent
 
 
   ],
