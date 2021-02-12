@@ -4,6 +4,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
+
+
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { A11yModule } from '@angular/cdk/a11y';
 import { ClipboardModule } from '@angular/cdk/clipboard';
@@ -48,7 +52,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatTreeModule } from '@angular/material/tree';
 import { OverlayModule } from '@angular/cdk/overlay';
 // For MDB Angular Free
-import { NavbarModule, WavesModule, ButtonsModule } from 'angular-bootstrap-md';
+
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
@@ -71,6 +75,8 @@ import { NavigationComponent } from './navigation/navigation.component';
 @NgModule({
   declarations: [
     AppComponent,
+    AboutComponent,
+
     NavigationComponent,
     ContactComponent,
     FormCreateComponent,
@@ -92,6 +98,10 @@ import { NavigationComponent } from './navigation/navigation.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    NgbModule,
+    MatCardModule,
+    FormsModule,
+    FlexLayoutModule,
     MatToolbarModule,
     A11yModule,
     ClipboardModule,
@@ -137,9 +147,6 @@ import { NavigationComponent } from './navigation/navigation.component';
     OverlayModule,
     PortalModule,
     ScrollingModule,
-    NavbarModule,
-    WavesModule,
-    ButtonsModule,
     FormsModule,
     HttpClientModule,
     MatNativeDateModule,
