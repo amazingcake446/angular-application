@@ -3,7 +3,11 @@ $font-weight-max: 900;
 
 mat-card-header {
   display: block;
-
+  mat-card-title {
+    text-align: center;
+    margin-left: 2.2rem; 
+    margin-top: .5rem; 
+  }
   .header-image {
     margin-left: 10px;
   }
@@ -45,19 +49,19 @@ section.results {
     .quiz-feedback {
       margin-top: 20px;
 
-      /* .great-job {
-        background: url('../../../../assets/images/ngtrophy.jpg') no-repeat center center;
+      .great-job {
+        background: url('https://i.pinimg.com/originals/2b/48/7e/2b487e0b2ead4df5544ce6e1c625e111.png') no-repeat center center;
         object-fit: cover;
         border: none !important;
       }
       .not-bad {
-        background: url('../../../../assets/images/notbad.jpg') no-repeat center center;
+        background: url('https://freepngimg.com/thumb/internet_meme/10-2-not-bad-meme-png.png') no-repeat center center;
         background-size: contain;
       }
       .try-again {
-        background: url('../../../../assets/images/tryagain.jpeg') no-repeat center center;
+        background: url('https://www.simplystamps.com/media/catalog/product/cache/5/image/600x600/9df78eab33525d08d6e5fb8d27136e95/1/1/11140-try-again-round-teacher-grading-stamp-hcb.png') no-repeat center center;
         background-size: contain;
-      } */
+      }
       .great-job, .not-bad, .try-again {
         display: inline-block !important;
         background-size: 100% !important;
@@ -232,4 +236,47 @@ a.btn:focus:not(:active)::after {
     opacity: 0;
     transform: scale(10);
   }
+}
+
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+mat-card {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 10%;
+  margin-left: 30%; 
+  width: 43rem;
+  height: inherit;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+mat-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+mat-card-title {
+  margin: -50px 90px 10px 10px;
+  font-family: "Monospace", monospace;
+  font-size: 30px !important;
+  font-weight: 900 !important;
+  color: #007aff;
+  display: block; 
+}
+mat-card-subtitle {
+  text-align: center;
+  margin-right: 80px; 
+  font-family: "Space Mono", monospace;
+  font-style: italic;
+  font-size: 17.5px !important;
+  font-weight: 900 !important;
+  color: #808080;
 }

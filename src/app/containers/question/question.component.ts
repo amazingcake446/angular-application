@@ -16,7 +16,7 @@ export class QuestionComponent implements OnInit {
   totalQuestions: number;
   completionTime: number;
   correctAnswersCount = 0;
-
+ 
   questionID = 0;
   currentQuestion = 0;
   questionIndex: number;

@@ -21,9 +21,9 @@ export class ResultsComponent implements OnInit {
   elapsedSeconds: number;
   codelabUrl = 'https://www.codelab.fun';
 
-  CONGRATULATIONS = '../../../assets/images/ngtrophy.jpg';
-  NOT_BAD = '../../../assets/images/notbad.jpg';
-  TRY_AGAIN = '../../../assets/images/tryagain.jpeg';
+  CONGRATULATIONS = 'https://i.pinimg.com/originals/2b/48/7e/2b487e0b2ead4df5544ce6e1c625e111.png';
+  NOT_BAD = 'https://freepngimg.com/thumb/internet_meme/10-2-not-bad-meme-png.png';
+  TRY_AGAIN = 'https://www.simplystamps.com/media/catalog/product/cache/5/image/600x600/9df78eab33525d08d6e5fb8d27136e95/1/1/11140-try-again-round-teacher-grading-stamp-hcb.png';
   
   constructor(private router: Router) {
     this.totalQuestions = this.router.getCurrentNavigation().extras.state.totalQuestions;
