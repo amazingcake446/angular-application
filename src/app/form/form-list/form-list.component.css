@@ -1,5 +1,9 @@
 /*Main CSS*/
 
+.container-fluid {
+    height: 100vh !important;
+}
+
 .table {
     font-size: 13px;
 }
