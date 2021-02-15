@@ -15,9 +15,10 @@ import { FormCreateComponent } from './form/form-create/form-create.component';
 
 const routes: Routes = [
 
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'about', component: AboutComponent },
- /*  { path: 'quiz', component: QuizComponent }, */
+  /*  { path: 'quiz', component: QuizComponent }, */
   { path: 'contact', component: FormCreateComponent },
   { path: 'edit/:id', component: FormEditComponent },
   { path: 'list', component: FormListComponent },
@@ -25,7 +26,6 @@ const routes: Routes = [
   { path: 'question', component: QuestionComponent },
   { path: 'question/:questionId', component: QuestionComponent },
   { path: 'results', component: ResultsComponent },
-  /* { path: '', redirectTo: 'intro', pathMatch: 'full' } */
 
 ];
 
